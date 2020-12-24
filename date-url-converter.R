@@ -7,10 +7,9 @@
 ## so there is no mathematical rule that can predict the number for a specific given date
 #let's start at least by making a function that can add in a number of your choice to the url
 
-urlmaker <- function(number) {
-  return(c("https://commonsbusiness.parliament.uk/document/", number, "/html"))
+urlmaker <- function(beginning = "https://commonsbusiness.parliament.uk/document/", number, end = "/html") {
+  return(c(beginning, number, end))
 }
 
-urlmaker <- Vectorize(urlmaker)
-fakeurl <- urlmaker("1234")
-fakeurl
+urlmaker(number = "1234")
+
