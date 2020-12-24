@@ -22,3 +22,9 @@ motiontext2 <- function(number) {
 }
 
 motiontext2("44075")
+motiontext2("00222") #this function will return an error rather if the doc number does not exist
+
+
+motiontext2("44074")
+
+##records with these document conventions only go back as far as 2020...
