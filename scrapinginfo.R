@@ -34,10 +34,10 @@ motiontext <- function(url) { #making a function that does all this
   oob
   oobp <- html_nodes(oob, "p")
   oobp
-  return(html_text(xml_find_all(oobp, "//p[contains(@class, 'paraMotionText')]")))
+  return(html_text((oobp)))
 }
 
-functiontest <- motiontext("https://commonsbusiness.parliament.uk/document/44075/html")
+functiontest <- pmtmotiontext("https://commonsbusiness.parliament.uk/document/44075/html")
 
-motiontext("https://commonsbusiness.parliament.uk/document/44074/html") 
+
 
