@@ -25,3 +25,18 @@ xml_find_all(dec18p, "TableStyles_TableStyle")
 xml_find_all(dec18p, "//p[contains(@class, 'paraMotionText')]")
 ##THAT WORKS
 dec18pmt <- xml_find_all(dec18p, "//p[contains(@class, 'paraMotionText')]")
+
+motiontextdec18 <- html_text(dec18pmt) #that brings out the text
+motiontextdec18
+
+motiontext <- function(url) { #making a function that does all this
+  oob <- (read_html(url))
+  oob
+  oobp <- html_nodes(oob, "p")
+  oobp
+  return(html_text(xml_find_all(oobp, "//p[contains(@class, 'paraMotionText')]")))
+}
+
+functiontest <- motiontext("https://commonsbusiness.parliament.uk/document/44075/html")
+
+motiontext("https://commonsbusiness.parliament.uk/document/44074/html") 
