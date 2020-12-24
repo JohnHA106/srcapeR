@@ -13,3 +13,12 @@ urlmaker <- function(beginning = "https://commonsbusiness.parliament.uk/document
 
 urlmaker(number = "1234")
 
+motiontext(urlmaker(number = "44075")) #you must always designate number = xxxx but this seems to work nicely
+
+#make a function that compiles the two
+
+motiontext2 <- function(number) {
+  motiontext(urlmaker(number = number))
+}
+
+motiontext2("44075")

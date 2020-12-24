@@ -37,7 +37,7 @@ motiontext <- function(url) { #making a function that does all this
   return(html_text((oobp)))
 }
 
-functiontest <- pmtmotiontext("https://commonsbusiness.parliament.uk/document/44075/html")
-
+functiontest <- motiontext("https://commonsbusiness.parliament.uk/document/44075/html")
+functiontest
 
 
