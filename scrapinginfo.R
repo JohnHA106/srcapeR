@@ -40,3 +40,4 @@ motiontext <- function(url) { #making a function that does all this
 functiontest <- motiontext("https://commonsbusiness.parliament.uk/document/44075/html")
 
 motiontext("https://commonsbusiness.parliament.uk/document/44074/html") 
+
