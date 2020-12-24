@@ -34,7 +34,7 @@ blah.df <- data.frame(blah)
 
 motiontext3 <- function(number) { #number must be as char
   oob <- motiontext2(number)
-  return(data.frame(oob))
+  return(data.frame(oob)) ##this is basically the same function but returns a dataframe which mught be more useful
 }
 
 firstof2021oob <- motiontext3(44074)
