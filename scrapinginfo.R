@@ -19,9 +19,9 @@ dec18nodes2 <- html_children(dec18nodes)
 #paraMotionText is the class i think I want
 contentdec18 <- html_nodes(dec18oob, "paraMotionText")
 dec18nodes <- html_node(dec18oob, "body")
-dec18nodes <- html_children(dec18nodes)
-dec18nodes<- 
-
-
-drillr <- c(1:20)
-lapply(drillr, html_nodes)
+dec18p <- html_nodes(dec18oob, "p")
+xml_find_all(dec18p, "TableStyles_TableStyle")
+##his retrives nothing, indicating I still don't have the syntax correct really.
+xml_find_all(dec18p, "//p[contains(@class, 'paraMotionText')]")
+##THAT WORKS
+dec18pmt <- xml_find_all(dec18p, "//p[contains(@class, 'paraMotionText')]")
