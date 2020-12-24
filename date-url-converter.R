@@ -28,3 +28,13 @@ motiontext2("00222") #this function will return an error rather if the doc numbe
 motiontext2("44074")
 
 ##records with these document conventions only go back as far as 2020...
+
+blah <- motiontext2("44074")
+blah.df <- data.frame(blah)
+
+motiontext3 <- function(number) { #number must be as char
+  oob <- motiontext2(number)
+  return(data.frame(oob))
+}
+
+firstof2021oob <- motiontext3(44074)
