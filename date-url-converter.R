@@ -8,8 +8,8 @@
 #let's start at least by making a function that can add in a number of your choice to the url
 
 urlmaker <- function(beginning = "https://commonsbusiness.parliament.uk/document/", number, end = "/html") {
-  return(c(beginning, number, end))
-}
+  return(paste(beginning, number, end))
+} #this works better i think
 
-urlmaker(number = "1234")
+urlmaker(number = "1234") #ok it works but i need to remove the spaces
 
