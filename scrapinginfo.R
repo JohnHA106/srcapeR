@@ -20,5 +20,8 @@ dec18nodes2 <- html_children(dec18nodes)
 contentdec18 <- html_nodes(dec18oob, "paraMotionText")
 dec18nodes <- html_node(dec18oob, "body")
 dec18nodes <- html_children(dec18nodes)
-dec18meat <- dec18nodes[[5]] #think this contains the <p> nodes I want
+dec18nodes<- 
 
+
+drillr <- c(1:20)
+lapply(drillr, html_nodes)
